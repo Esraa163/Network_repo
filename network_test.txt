@@ -1,4 +1,15 @@
-hostname -I
-ping -c 4 google.com
-nslookup google.com
+{
+    echo "IP Address:"
+    hostname -I
+
+    echo ""
+    echo "Ping to google.com:"
+    ping -c 4 google.com
+
+    echo ""
+    echo "Domain: google.com"
+    echo "IP from nslookup:"
+    nslookup google.com
+} > network_test.txt
+
 
